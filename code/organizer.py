@@ -9,7 +9,7 @@ videoFormats = ["mp4","avi","webm","mkv"]
 docsFormats = ["txt","epub","pdf","doc","ino","xls"]
 
 
-#line to create a folder or directory
+#line to create a new folder 
 # os.makedirs("music")
 
 #rfolder path here 
@@ -19,7 +19,7 @@ while True:
 	files = os.listdir("./")
 
 	for file in files:
-		if os.path.isfile(file) and file != "organizer.py" : #when is runin with win startup put this: and file != organizer.bat and file != organizer.vbs
+		if os.path.isfile(file) and file != "organizer.py" : 
 			ext = (file.split(".")[-1]).lower()
 
 			if ext in imageFormats:
