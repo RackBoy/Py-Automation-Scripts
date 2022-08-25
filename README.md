@@ -1,2 +1,2 @@
-# Py-Automation-Scripts
+# Python-Automation-Scripts
 Some Python scripts to automatize my stuff 
