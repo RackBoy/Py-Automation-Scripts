@@ -1,20 +1,19 @@
 import os
 import shutil
 import pywintypes
-from win10toast import ToastNotifier
+
 
 imageFormats = ["jpg","png","jpeg","gif","webp","tiff"]
 audioFormats = ["mp3","wav"]
 videoFormats = ["mp4","avi","webm","mkv"]
 docsFormats = ["txt","epub","pdf","doc","ino","xls"]
 
-#toast = ToastNotifier()
-#toast.show_toast("File organizer running",duration=20) #show notification on win
 
 #line to create a folder or directory
 # os.makedirs("music")
 
-os.chdir("C:\\Users\\brahi\\Downloads")
+#rfolder path here 
+os.chdir("C:\\Users\\")
 
 while True:
 	files = os.listdir("./")
