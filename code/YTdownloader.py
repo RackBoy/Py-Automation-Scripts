@@ -4,7 +4,7 @@ import os
 
 
 yt_url = ''   #video url
-path = 'C:\\Users\\Downloads'    #my folder, where the video will be donwloaded
+path = 'C:\\Users\\Downloads'    # folder where the video will be downloaded
 
 #define some resolutions
 high = "720p"
