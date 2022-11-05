@@ -94,3 +94,16 @@ class cleaner:
                     os.remove(file)
                 else:
                     return
+     #move folder depending on some parameters. anyformat should be a list of the parameters
+    def move_folder(self, path, destiny, anyformat):
+        self.path = path
+        self.destiny = destiny
+        self.anyformat = anyformat
+
+        os.chdir(self.path)
+        folders = os.listdir("./")
+
+        for carpet in self.anyformat:
+            for folder in folders:
+                if carpet in folder:
+                    shutil.move(os.path.abspath(folder), self.destiny)
